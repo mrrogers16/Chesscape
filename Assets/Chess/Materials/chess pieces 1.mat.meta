@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2943ea47fe1c741a9ae33131630c9cf1
+timeCreated: 1500152931
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95641
+  packageName: Chess Pieces and Board
+  packageVersion: 2.0
+  assetPath: Assets/Chess/Materials/chess pieces 1.mat
+  uploadId: 194112

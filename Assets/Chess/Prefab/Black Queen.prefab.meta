@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e9b85e3c5806d4152b0b5cb3158d2120
+timeCreated: 1501698920
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95641
+  packageName: Chess Pieces and Board
+  packageVersion: 2.0
+  assetPath: Assets/Chess/Prefab/Black Queen.prefab
+  uploadId: 194112

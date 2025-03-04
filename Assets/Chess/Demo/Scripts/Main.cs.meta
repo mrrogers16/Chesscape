@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 76b70c86cdc4e421f917485770365f81
+timeCreated: 1501695117
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95641
+  packageName: Chess Pieces and Board
+  packageVersion: 2.0
+  assetPath: Assets/Chess/Demo/Scripts/Main.cs
+  uploadId: 194112

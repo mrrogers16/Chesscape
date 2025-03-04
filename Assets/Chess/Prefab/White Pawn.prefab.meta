@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6653ddcbd4a2e453ba6e07f8931ce86c
+timeCreated: 1501698974
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95641
+  packageName: Chess Pieces and Board
+  packageVersion: 2.0
+  assetPath: Assets/Chess/Prefab/White Pawn.prefab
+  uploadId: 194112

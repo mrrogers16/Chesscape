@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7302be28962c243678252e7c6255fdbc
+timeCreated: 1501698927
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95641
+  packageName: Chess Pieces and Board
+  packageVersion: 2.0
+  assetPath: Assets/Chess/Prefab/Black Pawn.prefab
+  uploadId: 194112

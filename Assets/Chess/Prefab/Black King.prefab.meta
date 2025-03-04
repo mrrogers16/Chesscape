@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8efc31579d9ab4990a3b6b97897f0183
+timeCreated: 1501698915
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95641
+  packageName: Chess Pieces and Board
+  packageVersion: 2.0
+  assetPath: Assets/Chess/Prefab/Black King.prefab
+  uploadId: 194112

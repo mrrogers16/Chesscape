@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8835e73a6e3e244ec8c45b515cdb8ff9
+timeCreated: 1502030017
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95641
+  packageName: Chess Pieces and Board
+  packageVersion: 2.0
+  assetPath: Assets/Chess/Demo/Demo.unity
+  uploadId: 194112

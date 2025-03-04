@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: edb6b1b31fb39473b9e613b9b73b23d6
+timeCreated: 1500145165
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95641
+  packageName: Chess Pieces and Board
+  packageVersion: 2.0
+  assetPath: Assets/Chess/Materials/Steel.mat
+  uploadId: 194112

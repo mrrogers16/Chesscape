@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: ccbaef9ffb1fc43f3acc022aa20d19a7
+timeCreated: 1501694563
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95641
+  packageName: Chess Pieces and Board
+  packageVersion: 2.0
+  assetPath: Assets/Chess/Scripts/ChessUiEngine.cs
+  uploadId: 194112

@@ -1,0 +1,312 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.34f1 (5ab2d9ed9190) revision 5944025'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 65357 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Program Files\6000.0.34f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+D:/Unity GameDev/Chesscape
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+58120
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+Successfully changed project path to: D:/Unity GameDev/Chesscape
+D:/Unity GameDev/Chesscape
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [38276]  Target information:
+
+Player connection [38276]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1608810237 [EditorId] 1608810237 [Version] 1048832 [Id] WindowsEditor(7,MRCPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [38276]  * "[IP] 192.168.1.100 [Port] 0 [Flags] 2 [Guid] 1608810237 [EditorId] 1608810237 [Version] 1048832 [Id] WindowsEditor(7,MRCPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [38276]  * "[IP] 192.168.244.1 [Port] 0 [Flags] 2 [Guid] 1608810237 [EditorId] 1608810237 [Version] 1048832 [Id] WindowsEditor(7,MRCPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [38276]  * "[IP] 192.168.112.1 [Port] 0 [Flags] 2 [Guid] 1608810237 [EditorId] 1608810237 [Version] 1048832 [Id] WindowsEditor(7,MRCPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [38276] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [38276] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.34f1 (5ab2d9ed9190)
+[Subsystems] Discovering subsystems at path D:/Program Files/6000.0.34f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity GameDev/Chesscape/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3090 (ID=0x2204)
+    Vendor:   NVIDIA
+    VRAM:     24326 MB
+    Driver:   32.0.15.7216
+Initialize mono
+Mono path[0] = 'D:/Program Files/6000.0.34f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/6000.0.34f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Program Files/6000.0.34f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Program Files/6000.0.34f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Program Files/6000.0.34f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001659 seconds.
+- Loaded All Assemblies, in  0.327 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.259 seconds
+Domain Reload Profiling: 586ms
+	BeginReloadAssembly (113ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (126ms)
+		LoadAssemblies (112ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (123ms)
+			TypeCache.Refresh (121ms)
+				TypeCache.ScanAssembly (111ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (259ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (223ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (43ms)
+			ProcessInitializeOnLoadAttributes (115ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.568 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.624 seconds
+Domain Reload Profiling: 1191ms
+	BeginReloadAssembly (143ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (358ms)
+		LoadAssemblies (242ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (200ms)
+			TypeCache.Refresh (136ms)
+				TypeCache.ScanAssembly (124ms)
+			BuildScriptInfoCaches (45ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (624ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (502ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (84ms)
+			ProcessInitializeOnLoadAttributes (340ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 200 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6353 unused Assets / (6.6 MB). Loaded Objects now: 6991.
+Memory consumption went from 160.8 MB to 154.2 MB.
+Total: 11.989900 ms (FindLiveObjects: 0.759700 ms CreateObjectMapping: 1.100300 ms MarkObjects: 6.578500 ms  DeleteObjects: 3.549200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 22585.008269 seconds.
+  path: Assets/Materials/BlackFloor.mat
+  artifactKey: Guid(89ffc290dfce4a7428d5c6506b27988e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/BlackFloor.mat using Guid(89ffc290dfce4a7428d5c6506b27988e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '136f75b75aed460a6615dcdee7bbd4a6') in 0.444998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.596206 seconds.
+  path: Assets/Materials/WhiteFloor.mat
+  artifactKey: Guid(8cea75c592229214ea156718ad642d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WhiteFloor.mat using Guid(8cea75c592229214ea156718ad642d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '24293bf73514b8d200988aba264e52b0') in 0.0174706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.416258 seconds.
+  path: Assets/Scalable Grid Prototype Materials/Materials/Ground/Gray_Ground_Prototype.mat
+  artifactKey: Guid(002192ac53fd9144a92c5dd7b22819a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scalable Grid Prototype Materials/Materials/Ground/Gray_Ground_Prototype.mat using Guid(002192ac53fd9144a92c5dd7b22819a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed4c14b3f284fd254118c8f33e705f2e') in 5.4630728 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Scalable Grid Prototype Materials/Materials/Mantis_Prototype.mat
+  artifactKey: Guid(720ea100b5a5ea741a0e79cfb3ab65c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scalable Grid Prototype Materials/Materials/Mantis_Prototype.mat using Guid(720ea100b5a5ea741a0e79cfb3ab65c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4604640efb098ee1f7b5df70b9e59a4') in 0.0769834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Scalable Grid Prototype Materials/Materials/Orange_Prototype.mat
+  artifactKey: Guid(d78d6cd3137a8824699cde034b4270c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scalable Grid Prototype Materials/Materials/Orange_Prototype.mat using Guid(d78d6cd3137a8824699cde034b4270c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12254841b749c708a48c1ff8ea1e5f97') in 0.0586818 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Scalable Grid Prototype Materials/Materials/Light_Sea_Green_Prototype.mat
+  artifactKey: Guid(40598ecf603ac4d41b1f525da75d9d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scalable Grid Prototype Materials/Materials/Light_Sea_Green_Prototype.mat using Guid(40598ecf603ac4d41b1f525da75d9d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b976f4f883e4dad2112bf3957051e86') in 0.0594312 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Scalable Grid Prototype Materials/Materials/Green_Prototype.mat
+  artifactKey: Guid(efe26027cacc84b409062a6cff9b90c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scalable Grid Prototype Materials/Materials/Green_Prototype.mat using Guid(efe26027cacc84b409062a6cff9b90c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0f80cabf3ce61f92e3e65a4399fe215') in 0.056866 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Scalable Grid Prototype Materials/Materials/White_Prototype.mat
+  artifactKey: Guid(81caf0b4f4d2ac74e847cad8de1aa792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scalable Grid Prototype Materials/Materials/White_Prototype.mat using Guid(81caf0b4f4d2ac74e847cad8de1aa792) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1f326664f7a2fd2e3d264a95a7a14f42') in 0.0584737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Scalable Grid Prototype Materials/Materials/Light_Gray_Prototype.mat
+  artifactKey: Guid(848390390ab9d3740bfc096a1bdda56b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scalable Grid Prototype Materials/Materials/Light_Gray_Prototype.mat using Guid(848390390ab9d3740bfc096a1bdda56b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7b60ef4dd84c6e47b53beec0bf2367a') in 0.0547316 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Scalable Grid Prototype Materials/Materials/Red_Prototype.mat
+  artifactKey: Guid(6af20d21fdb3e9846be9fcc5368045e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scalable Grid Prototype Materials/Materials/Red_Prototype.mat using Guid(6af20d21fdb3e9846be9fcc5368045e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c15bf9e5d8cb36315b88e1682d60e0b') in 0.0530444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Scalable Grid Prototype Materials/Materials/Violet_Prototype.mat
+  artifactKey: Guid(7ec4e7373ac023f42bc829945cdcdf38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scalable Grid Prototype Materials/Materials/Violet_Prototype.mat using Guid(7ec4e7373ac023f42bc829945cdcdf38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'faaf3dafff67ef3d15a5fb8a53ec95f7') in 0.0483038 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.898476 seconds.
+  path: Assets/Scalable Grid Prototype Materials/Materials/Dark_Blue_Prototype.mat
+  artifactKey: Guid(88b3961b9a9bd064ebcc2f4cbf42faf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scalable Grid Prototype Materials/Materials/Dark_Blue_Prototype.mat using Guid(88b3961b9a9bd064ebcc2f4cbf42faf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e99f0755162c60d493d5bef25c1ad2c5') in 0.0566679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Scalable Grid Prototype Materials/Materials/Blue_Sapphire_Prototype.mat
+  artifactKey: Guid(aa60dc0f504f8eb41974f50e1528f594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scalable Grid Prototype Materials/Materials/Blue_Sapphire_Prototype.mat using Guid(aa60dc0f504f8eb41974f50e1528f594) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6bf033a9b633ea0545212f154c3af20b') in 0.0592336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bcf19558551614c79a55a9e750ad43b1
+timeCreated: 1501698860
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95641
+  packageName: Chess Pieces and Board
+  packageVersion: 2.0
+  assetPath: Assets/Chess/Prefab/Black Rook.prefab
+  uploadId: 194112

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8bc6354dcbfe34a3fba0b40d5887dd47
+timeCreated: 1501698955
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95641
+  packageName: Chess Pieces and Board
+  packageVersion: 2.0
+  assetPath: Assets/Chess/Prefab/White Bishop.prefab
+  uploadId: 194112
