@@ -1,7 +1,11 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEditor.UI;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -17,6 +21,8 @@ public class Player : MonoBehaviour
     public Transform keyHoldPoint;
     public bool hasKey = false;
 
+    public LayerMask wallLayer;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -26,20 +32,26 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     public void Move(Vector3 gridDirection)
     {
-        if (!isMoving && gridDirection != Vector3.zero)
+        if (isMoving || gridDirection == Vector3.zero)
         {
-            // Figure out the grid's target position
-            Vector3 targetPosition = transform.position + (gridDirection.normalized * moveStep);
-
-            // Rotate the player toward movement direction
-            Quaternion targetRotation = Quaternion.LookRotation(gridDirection);
-            StartCoroutine(MoveToPosition(targetPosition, targetRotation));
+            return;
         }
+
+        if (IsWallOrDoorBlocking(gridDirection))
+        {
+            Debug.Log("Wall detected. Movement blocked");
+            return;
+        }
+
+        Vector3 targetPosition = transform.position + (gridDirection.normalized * moveStep);
+
+        Quaternion targetRotation = Quaternion.LookRotation(gridDirection);
+        StartCoroutine(MoveToPosition(targetPosition, targetRotation));
     }
 
     private IEnumerator MoveToPosition(Vector3 targetPos, Quaternion targetRot)
@@ -84,7 +96,9 @@ public class Player : MonoBehaviour
         {
             ActivateTrap();
         }
+
     }
+
 
     public void ActivateTrap()
     {
@@ -108,5 +122,49 @@ public class Player : MonoBehaviour
         }
 
         hasKey = true;
+    }
+
+    private bool IsWallOrDoorBlocking(Vector3 direction)
+    {
+        RaycastHit hit;
+        Vector3 rayStart = transform.position + Vector3.up * 0.5f;
+        float rayLength = moveStep * 1.2f;
+
+        // Cast in front of the player
+        if (Physics.BoxCast(rayStart, new Vector3(0.4f, 0.5f, 0.4f), direction, out hit, Quaternion.identity, rayLength, wallLayer))
+        {
+            // If it's a door, see if we have a key
+            if (hit.collider.CompareTag("Door"))
+            {
+                if (hasKey)
+                {
+                    Debug.Log("Door detected. We have a key, so destroy it and pass.");
+                    Destroy(hit.collider.gameObject);
+
+                    // If you want to consume the key completely, remove the held key object
+                    if (keyHoldPoint.childCount > 0)
+                    {
+                        Destroy(keyHoldPoint.GetChild(0).gameObject);
+                    }
+                    hasKey = false;
+
+                    // Because we destroyed the door, we can pass, so return false
+                    return false;
+                }
+                else
+                {
+                    Debug.Log("Door detected. We do NOT have a key. Movement blocked.");
+                    return true;
+                }
+            }
+            else
+            {
+                // It's a wall (or something else on the wallLayer), so block movement
+                Debug.Log("Wall detected. Movement blocked.");
+                return true;
+            }
+        }
+        // No wall or door hit, so we can move
+        return false;
     }
 }

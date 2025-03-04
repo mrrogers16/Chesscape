@@ -7,6 +7,7 @@ TagManager:
   - Key
   - Trap
   - Wall
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Key
   - 
   - Trap
-  - 
+  - Door
   - 
   - 
   - 
