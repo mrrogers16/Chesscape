@@ -1,2 +1,77 @@
-/Packages
-/Library
+# === Unity Specific ===
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# === Visual Studio / Rider ===
+.vs/
+.idea/
+*.sln
+*.csproj
+*.unityproj
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.ilk
+*.obj
+*.log
+*.swp
+*.bak
+*.ncb
+*.aps
+*.sdf
+*.tlog
+*.VC.db
+*.opendb
+*.VC.VC.opendb
+
+# === OS Specific ===
+.DS_Store
+Thumbs.db
+
+# === Unity Plugin Folders (Do Not Ignore if Using Source Control for Assets) ===
+Assets/Plugins/Editor/
+
+# === Crash Reports and Debugging ===
+crash-reports/
+UnityShaderCache/
+.globlals/
+
+# === Ignore PlayerSettings and Local Project Settings (optional, if not using per-machine settings) ===
+ProjectSettings/EditorBuildSettings.asset
+ProjectSettings/EditorSettings.asset
+ProjectSettings/ProjectVersion.txt
+ProjectSettings/QualitySettings.asset
+ProjectSettings/TagManager.asset
+
+# === Package Manager ===
+Packages/com.unity.*.test/
+Packages/com.unity.*.samples/
+Packages/com.unity.*.example/
+
+# === Logs and Cache ===
+.logs/
+Cache/
+*.stackdump
+*.tmp
+*.bak
+
+# === Auto-generated files ===
+*.apk
+*.aab
+*.ipa
+*.exe
+*.app
+*.dmg
+
+# === Unity Collab (if not using) ===
+.collabignore
