@@ -72,7 +72,7 @@ public class LevelSpawner : MonoBehaviour
             // Only spawn if the tile is unoccupied
             if (!tile.occupied)
             {
-                Instantiate(wallPrefab, tile.tileTransform.position + new Vector3(0, 4f, 0), Quaternion.identity);
+                Instantiate(wallPrefab, tile.tileTransform.position + new Vector3(0, 3f, 0), Quaternion.identity);
                 tile.occupied = true;
                 spawnedWallCount++;
             }
