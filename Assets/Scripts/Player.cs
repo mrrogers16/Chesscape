@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 
     [Header("Key Info")]
     public Transform keyHoldPoint;
-    public bool hasKey = false;
+    public bool hasKey = false; 
 
     public LayerMask wallLayer;
 

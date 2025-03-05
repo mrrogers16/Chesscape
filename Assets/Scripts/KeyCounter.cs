@@ -9,6 +9,11 @@ public class KeyCounter : MonoBehaviour
     public Player playerObject;
     void Start()
     {
+
+    }
+
+    void Update()
+    {
         if (playerObject.hasKey)
         {
             keyText.text = "1";
@@ -17,7 +22,9 @@ public class KeyCounter : MonoBehaviour
         {
             keyText.text = "0";
         }
+
     }
+
 
 
 }
