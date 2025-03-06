@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 
     [Header("Key Info")]
     public Transform keyHoldPoint;
-    public bool hasKey = false; 
+    public bool hasKey = false;
 
     public LayerMask wallLayer;
 
@@ -97,23 +97,34 @@ public class Player : MonoBehaviour
             ActivateTrap();
         }
 
+        if (other.CompareTag("Exit"))
+        {
+            WinGame();
+        }
+
+    }
+
+    public void WinGame()
+    {
+        Debug.Log("Exit found");
+        SceneManager.LoadScene("WinScreen");
     }
 
 
     public void ActivateTrap()
     {
         Debug.Log("Trap Activated");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("DeathScreen");
     }
 
     public void PickupKey(GameObject key)
     {
-        Debug.Log("PickupKey Called!");
+        Debug.Log("PickupKey Called");
 
 
         key.transform.SetParent(keyHoldPoint, worldPositionStays: true);
-        key.transform.position = keyHoldPoint.position;
-        key.transform.rotation = keyHoldPoint.rotation;
+        // key.transform.position = keyHoldPoint.position;
+        // key.transform.rotation = keyHoldPoint.rotation;
 
         Collider keyCollider = key.GetComponent<Collider>();
         if (keyCollider != null)
@@ -138,10 +149,9 @@ public class Player : MonoBehaviour
             {
                 if (hasKey)
                 {
-                    Debug.Log("Door detected. We have a key, so destroy it and pass.");
+                    Debug.Log("Door detected. We have a key. Destroy door.");
                     Destroy(hit.collider.gameObject);
 
-                    // If you want to consume the key completely, remove the held key object
                     if (keyHoldPoint.childCount > 0)
                     {
                         Destroy(keyHoldPoint.GetChild(0).gameObject);
@@ -159,7 +169,6 @@ public class Player : MonoBehaviour
             }
             else
             {
-                // It's a wall (or something else on the wallLayer), so block movement
                 Debug.Log("Wall detected. Movement blocked.");
                 return true;
             }

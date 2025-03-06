@@ -66,10 +66,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\LevelSpawner.cs" />
+    <Compile Include="Assets\Scripts\WinScreenHandler.cs" />
     <Compile Include="Assets\Scripts\KeyCounter.cs" />
     <Compile Include="Assets\Scripts\PlayerInput.cs" />
+    <Compile Include="Assets\Scripts\DeathScreenHandler.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Chess\Scripts\ChessUiEngine.cs" />
+    <Compile Include="Assets\Scripts\StartScreenHandler.cs" />
     <Compile Include="Assets\Chess\Demo\Scripts\Main.cs" />
   </ItemGroup>
   <ItemGroup>

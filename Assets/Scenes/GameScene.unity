@@ -748,11 +748,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4708102176794440770, guid: 7b269d0e3ce0b0c48bc678efaa07f997, type: 3}
   m_PrefabInstance: {fileID: 6229488722931639596}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &544374505 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6777793701953358025, guid: 7b269d0e3ce0b0c48bc678efaa07f997, type: 3}
-  m_PrefabInstance: {fileID: 6229488722931639596}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &596019399 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5668729194996029803, guid: 7b269d0e3ce0b0c48bc678efaa07f997, type: 3}
@@ -935,11 +930,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8680656977253849787, guid: 7b269d0e3ce0b0c48bc678efaa07f997, type: 3}
   m_PrefabInstance: {fileID: 6229488722931639596}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &995567532 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4209343645673038197, guid: 7b269d0e3ce0b0c48bc678efaa07f997, type: 3}
-  m_PrefabInstance: {fileID: 6229488722931639596}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &997946255 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6784130395280747464, guid: 7b269d0e3ce0b0c48bc678efaa07f997, type: 3}
@@ -1112,8 +1102,24 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7425198957342883801, guid: ba1bd119919778a45a36fb47ee825d3d, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7425198957342883801, guid: ba1bd119919778a45a36fb47ee825d3d, type: 3}
+      propertyPath: m_TagString
+      value: Exit
+      objectReference: {fileID: 0}
     - target: {fileID: 7435407311820336730, guid: ba1bd119919778a45a36fb47ee825d3d, type: 3}
       propertyPath: m_Name
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435407311820336730, guid: ba1bd119919778a45a36fb47ee825d3d, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435407311820336730, guid: ba1bd119919778a45a36fb47ee825d3d, type: 3}
+      propertyPath: m_TagString
       value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 9172106725220804837, guid: ba1bd119919778a45a36fb47ee825d3d, type: 3}
@@ -1498,11 +1504,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5022874126601429999, guid: 7b269d0e3ce0b0c48bc678efaa07f997, type: 3}
   m_PrefabInstance: {fileID: 6229488722931639596}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1719184997 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7014523032214373283, guid: 7b269d0e3ce0b0c48bc678efaa07f997, type: 3}
-  m_PrefabInstance: {fileID: 6229488722931639596}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1725534042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 453248852786849333, guid: 7b269d0e3ce0b0c48bc678efaa07f997, type: 3}
@@ -1570,7 +1571,7 @@ MonoBehaviour:
   wallPrefab: {fileID: 7763265765431579558, guid: ea5e141ea53aa484a9979bf31fa9a390, type: 3}
   trapPrefab: {fileID: 3563366329969535696, guid: 9aab26548faaeca498ced39d61eb4d85, type: 3}
   exitPrefab: {fileID: 7435407311820336730, guid: ba1bd119919778a45a36fb47ee825d3d, type: 3}
-  keyPrefab: {fileID: 8245760247902660034, guid: 5b390b32da497064f96399a1ea0394c2, type: 3}
+  keyPrefab: {fileID: 1326830884481959955, guid: 0e49d6a81ffa091478132e0373105356, type: 3}
   playerPrefab: {fileID: 1043706808}
   wallSpawnPoints:
   - {fileID: 486000985}
@@ -1585,7 +1586,6 @@ MonoBehaviour:
   - {fileID: 1599118061}
   - {fileID: 1938718933}
   - {fileID: 1420295608}
-  - {fileID: 1719184997}
   - {fileID: 868391327}
   - {fileID: 596019399}
   - {fileID: 520631143}
@@ -1665,7 +1665,6 @@ MonoBehaviour:
   - {fileID: 183226983}
   - {fileID: 1591033221}
   - {fileID: 1004304379}
-  - {fileID: 855883248}
   - {fileID: 257085525}
   - {fileID: 519865603}
   - {fileID: 1541716446}
@@ -1705,8 +1704,6 @@ MonoBehaviour:
   - {fileID: 330501842}
   - {fileID: 537239816}
   - {fileID: 1966426059}
-  - {fileID: 995567532}
-  - {fileID: 544374505}
   keySpawnPoints:
   - {fileID: 1445602759}
   - {fileID: 182609103}
