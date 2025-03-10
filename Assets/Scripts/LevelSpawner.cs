@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using NUnit.Framework.Constraints;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GridTile
 {
@@ -39,24 +40,51 @@ public class LevelSpawner : MonoBehaviour
         PopulateGridTiles();
         SpawnKey();
         SpawnWalls();
-
         SpawnTraps();
 
+
     }
+
     void SpawnKey()
     {
-        if (keySpawnPoints == null || keySpawnPoints.Count == 0)
+        List<GridTile> availableTiles = new List<GridTile>();
+
+        foreach (GridTile tile in gridTiles)
         {
-            Debug.Log("No key spawn points provided");
+            if (!tile.occupied)
+            {
+                availableTiles.Add(tile);
+            }
+        }
+
+        if (availableTiles.Count == 0)
+        {
+            Debug.Log("No free tiles");
             return;
         }
 
-        foreach (Transform keyPoint in keySpawnPoints)
-        {
-            Instantiate(keyPrefab, keyPoint.position + new Vector3(0, 4f, 0), Quaternion.identity);
-        }
+        int randomIndex = Random.Range(0, availableTiles.Count);
+        GridTile chosenTile = availableTiles[randomIndex];
+
+        Instantiate(keyPrefab, chosenTile.tileTransform.position + new Vector3(0f, 2.5f, 0f), Quaternion.identity);
+
+        chosenTile.occupied = true;
 
     }
+    // void SpawnKey()
+    // {
+    //     if (keySpawnPoints == null || keySpawnPoints.Count == 0)
+    //     {
+    //         Debug.Log("No key spawn points provided");
+    //         return;
+    //     }
+
+    //     int randomIndex = Random.Range(0, keySpawnPoints.Count);
+    //     Transform keyPoint = keySpawnPoints[randomIndex];
+
+    //     Instantiate(keyPrefab, keyPoint.position + new Vector3(0, 2.5f, 0), Quaternion.identity);
+
+    // }
     void SpawnWalls()
     {
         int spawnedWallCount = 0;
@@ -126,6 +154,7 @@ public class LevelSpawner : MonoBehaviour
         }
 
         // Create a GridTile for each spawn point
+        // Chatgpt helped with this one
         foreach (Transform t in wallSpawnPoints)
         {
             int col = Mathf.RoundToInt((t.position.x - minX) / tileSize);
@@ -141,28 +170,6 @@ public class LevelSpawner : MonoBehaviour
         }
     }
 
-    private GridTile GetRandomUnoccupiedTile()
-    {
-        // Build a temporary list of unoccupied tiles
-        List<GridTile> unoccupied = new List<GridTile>();
-        foreach (GridTile tile in gridTiles)
-        {
-            if (!tile.occupied)
-            {
-                unoccupied.Add(tile);
-            }
-        }
-
-        // If none available, return null
-        if (unoccupied.Count == 0)
-        {
-            return null;
-        }
-
-        // Otherwise, pick a random one
-        int randomIndex = Random.Range(0, unoccupied.Count);
-        return unoccupied[randomIndex];
-    }
 }
 
 

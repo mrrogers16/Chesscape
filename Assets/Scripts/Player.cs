@@ -13,15 +13,23 @@ public class Player : MonoBehaviour
     public float moveStep = 10f;         // How far each grid step goes
     public float moveDuration = 55f;   // How long to move one step
     public float rotationSpeed = 5f;    // How quickly to rotate toward movement direction
-
-    private Rigidbody rb;
     private bool isMoving = false;
+    private Rigidbody rb;
 
     [Header("Key Info")]
     public Transform keyHoldPoint;
     public bool hasKey = false;
 
+    [Header("Layers")]
     public LayerMask wallLayer;
+
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip moveSound;
+    public AudioClip unlockSound;
+    public AudioClip pickupKeySound;
+    public AudioClip deathSound;
+    public AudioClip wallSound;
 
     void Awake()
     {
@@ -44,6 +52,9 @@ public class Player : MonoBehaviour
 
         if (IsWallOrDoorBlocking(gridDirection))
         {
+            audioSource.clip = wallSound;
+            audioSource.Play();
+
             Debug.Log("Wall detected. Movement blocked");
             return;
         }
@@ -56,6 +67,10 @@ public class Player : MonoBehaviour
 
     private IEnumerator MoveToPosition(Vector3 targetPos, Quaternion targetRot)
     {
+        audioSource.Stop();
+        audioSource.clip = moveSound;
+        audioSource.Play();
+
         isMoving = true;
 
         Vector3 startPos = rb.position;          // current position
@@ -114,6 +129,15 @@ public class Player : MonoBehaviour
     public void ActivateTrap()
     {
         Debug.Log("Trap Activated");
+        StartCoroutine(Die());
+    }
+
+    public IEnumerator Die()
+    {
+        audioSource.Stop();
+        audioSource.clip = deathSound;
+        audioSource.Play();
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("DeathScreen");
     }
 
@@ -121,9 +145,12 @@ public class Player : MonoBehaviour
     {
         Debug.Log("PickupKey Called");
 
+        audioSource.Stop();
+        audioSource.clip = pickupKeySound;
+        audioSource.Play();
 
         key.transform.SetParent(keyHoldPoint, worldPositionStays: true);
-        // key.transform.position = keyHoldPoint.position;
+        key.transform.position = keyHoldPoint.position + new Vector3(0f, 2.5f, 0f);
         // key.transform.rotation = keyHoldPoint.rotation;
 
         Collider keyCollider = key.GetComponent<Collider>();
@@ -149,9 +176,8 @@ public class Player : MonoBehaviour
             {
                 if (hasKey)
                 {
-                    Debug.Log("Door detected. We have a key. Destroy door.");
+                    StartCoroutine(UnlockDoor());
                     Destroy(hit.collider.gameObject);
-
                     if (keyHoldPoint.childCount > 0)
                     {
                         Destroy(keyHoldPoint.GetChild(0).gameObject);
@@ -175,5 +201,15 @@ public class Player : MonoBehaviour
         }
         // No wall or door hit, so we can move
         return false;
+    }
+
+    public IEnumerator UnlockDoor()
+    {
+        Debug.Log("Door detected. We have a key. Destroy door.");
+
+        audioSource.Stop();
+        audioSource.clip = unlockSound;
+        audioSource.Play();
+        yield return new WaitForSeconds(1f);
     }
 }
